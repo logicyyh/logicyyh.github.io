@@ -1,0 +1,61 @@
+/* 强制覆盖所有白色文字样式 */
+* {
+  color: inherit !important;
+}/* 背景图基础样式（保留） */
+body {
+  background-image: url('background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 0.8);
+  background-blend-mode: overlay;
+}
+
+/* 内容区域样式（保证可读性） */
+#quarto-content {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 2rem;
+  border-radius: 8px;
+  margin: 2rem auto;
+  max-width: 1200px;
+}
+
+/* 字体颜色 - 蓝色系配置 */
+/* 全局文字颜色 */
+body, p, ul, ol, li {
+  color: #3182ce !important;
+  line-height: 1.8;
+}
+
+/* 主标题（h1/h2）：深蓝色 */
+h1, h2 {
+  color: #2c5282 !important;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 8px;
+}
+
+/* 次级标题（h3/h4）：中深蓝色 */
+h3, h4 {
+  color: #2d3748 !important;
+}
+
+/* 链接：浅蓝，hover 加深 */
+a {
+  color: #63b3ed !important;
+  text-decoration: none;
+}
+a:hover {
+  color: #2c5282 !important;
+  text-decoration: underline;
+}
+
+/* 导航栏文字：深蓝色 */
+.navbar a {
+  color: #2c5282 !important;
+}
+
+/* 右侧目录文字：深蓝色 */
+#quarto-sidebar .toc a {
+  color: #2c5282 !important;
+}
